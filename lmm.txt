@@ -1,0 +1,13 @@
+python scripts/strava_sync.py 58572 4950e3596acde68f8cd25d9b2e29b33e9b6bc0ec 34c95c95785772cd1eee76636513218d63590faf
+
+python scripts/gen_svg.py --from-db --title "${{ env.TITLE }}" --type github --athlete "${{ env.ATHLETE }}" --special-distance 10 --special-distance2 20 --special-color yellow --special-color2 red --output assets/github.svg --use-localtime --min-distance 0.5
+python scripts/gen_svg.py --from-db --title "lmm333_running" --type github --athlete "lmm333" --special-distance 10 --special-distance2 20 --special-color yellow --special-color2 red --output assets/github.svg --use-localtime --min-distance 0.5
+
+
+python scripts/gen_svg.py --from-db --title "TITLE_GRID" --type grid --athlete "lmm333"  --output assets/grid.svg --min-distance 10.0 --special-color yellow --special-color2 red --special-distance 20 --special-distance2 40 --use-localtime
+
+
+python scripts/gen_svg.py --from-db --type circular --use-localtime
+
+
+python scripts/garmin_sync.py lmm333@126.com 098765Ga

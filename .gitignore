@@ -15,6 +15,6 @@ _site/
 .mypy_cache
 
 /.vscode
-.idea
+.idea/
 
 config.yaml
